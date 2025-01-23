@@ -1,17 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Jack Kennedy Portfolio",
@@ -24,8 +13,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+      <body className="container"
+        style={{ 
+            backgroundImage: `url('images/background.jpg')`,
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            minHeight: `100vh` 
+          }}>
+        <nav className="navbar navbar-expand-lg" style={{ background: "#ececec", borderRadius: "4px" }}>
+          <div className="container-fluid">
+            <div className="navbar-nav" > 
+              <a className="nav-link active" aria-current="page" href="#">Home</a>
+              <a className="nav-link" href="#">About</a>
+              <a className="nav-link" href="#">Projects</a>
+              <a className="nav-link" href="#">Contact</a>
+            </div>
+          </div>
+        </nav>
+        {children}          
       </body>
     </html>
   );
