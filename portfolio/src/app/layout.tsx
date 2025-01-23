@@ -32,6 +32,7 @@ export default function RootLayout({
         </nav>
         {children}          
       </body>
+      {/* todo footer */}
     </html>
   );
 }
