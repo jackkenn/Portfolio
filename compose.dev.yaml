@@ -16,7 +16,6 @@ services:
     volumes:
       - ./portfolio/src:/app/src
       - ./portfolio/public:/app/public
-    restart: always
     ports:
       - 3000:3000
     networks:
