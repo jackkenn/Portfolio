@@ -22,3 +22,5 @@ docker system prune -af --volumes
 Uses github secrets
 
 Uses git actions to build and push docker image to docker hub https://hub.docker.com/repository/docker/jackdkennedy/portfolio/general
+
+Main branch protect, requires pull request to update
