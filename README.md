@@ -18,3 +18,7 @@ docker kill $(docker ps -aq) && docker rm $(docker ps -aq)
 # Free space
 docker system prune -af --volumes
 ```
+
+Uses github secrets
+
+Uses git actions to build and push docker image to docker hub https://hub.docker.com/repository/docker/jackdkennedy/portfolio/general
