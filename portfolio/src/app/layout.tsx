@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Nav from "./components/nav/nav";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -20,16 +21,7 @@ export default function RootLayout({
             backgroundRepeat: 'no-repeat',
             minHeight: `100vh` 
           }}>
-        <nav className="navbar navbar-expand-lg" style={{ background: "#ececec", borderRadius: "4px" }}>
-          <div className="container-fluid">
-            <div className="navbar-nav" > 
-              <a className="nav-link active" aria-current="page" href="#">Home</a>
-              <a className="nav-link" href="#">About</a>
-              <a className="nav-link" href="#">Projects</a>
-              <a className="nav-link" href="#">Contact</a>
-            </div>
-          </div>
-        </nav>
+        <Nav />
         {children}          
       </body>
       {/* todo footer */}
