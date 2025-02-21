@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Nav from "./components/nav/nav";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Footer from "./components/footer/footer";
 
 export const metadata: Metadata = {
   title: "Jack Kennedy Portfolio",
@@ -22,9 +23,9 @@ export default function RootLayout({
             minHeight: `100vh` 
           }}>
         <Nav />
-        {children}          
+        {children}
+        <Footer />
       </body>
-      {/* todo footer */}
     </html>
   );
 }

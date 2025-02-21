@@ -1,7 +1,7 @@
 export default function Nav() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg bg-body-primary">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             Portfolio
